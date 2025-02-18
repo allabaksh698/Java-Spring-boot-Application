@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/my-spring-boot-app.git'
+                git 'https://github.com/allabaksh698/Java-Spring-boot-Application.git'
             }
         }
         stage('Build') {
