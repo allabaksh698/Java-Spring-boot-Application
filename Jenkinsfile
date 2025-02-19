@@ -1,10 +1,14 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven 3.x' // Name of the Maven installation configured in Jenkins
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/allabaksh698/Java-Spring-boot-Application.git'
+                git branch: 'main', url: 'https://github.com/allabaksh698/Java-Spring-boot-Application.git'
             }
         }
         stage('Build') {
